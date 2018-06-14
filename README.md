@@ -20,6 +20,8 @@ See also: https://github.com/ethereum/EIPs/issues/948
 
 # Competing Implementations
 
+See `standards/` dir.
+
 * 8x
 * BlockcrushR
 * Piper Merriam implementation
