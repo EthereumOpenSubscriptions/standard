@@ -9,6 +9,7 @@ See also: https://github.com/ethereum/EIPs/issues/948
 * Kevin Owocki - Gitcoin
 * Travis Mathis
 * Rober Jorden
+* Piotr Kosiński - ChronoLogic (Ethereum Alarm Clock)
 * TODO- please add your name here
 
 # Design Goals 
