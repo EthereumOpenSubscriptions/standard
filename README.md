@@ -7,12 +7,12 @@ See also: https://github.com/ethereum/EIPs/issues/948
 
 * Scott Burke and Andrew Redden from BlockcrushR
 * Kevin Owocki - Gitcoin
-* Travis Mathis
+* Travis Mathis / Kerman Kohli - 8x Protocol
 * Rober Jorden
 * Piotr Kosiński - ChronoLogic (Ethereum Alarm Clock)
 * TODO- please add your name here
 
-# Design Goals 
+# Design Goals
 
 * Subscriptions
 * Free Trials
