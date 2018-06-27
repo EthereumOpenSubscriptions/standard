@@ -8,7 +8,7 @@ A standardized interface for interacting with recurring subscriptions.
 ##  Abstract
 Groundhog believes that the creation of a subscription should have a defined set of criteria, 
 we should be able to define a standardized public method that ensures that a subscription 
-can be created from any type of user interface without worry about specific implementation implements.
+can be created from any type of user interface without worry about specific implementation requirements.
 
 ## Our Thoughts
 
