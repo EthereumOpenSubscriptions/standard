@@ -165,10 +165,7 @@ function getSubscriptionStatus(bytes _subscriptionHash) view public returns (uin
   * @param _subscription is the identifier of the customer's subscription with its relevant details.
   * @return fee is the subscription fee.
 */
-function getSubscriptionFee(bytes32 _subscription)
-public
-view
-returns (uint fee);
+function getSubscriptionFee(bytes32 _subscriptionHash) public view returns (uint fee);
 ```
 
 #### Public Functions
