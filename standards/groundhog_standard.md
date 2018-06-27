@@ -221,5 +221,15 @@ function cancelSubscription(bytes _subscriptionHash) public returns (bool succes
 function pauseSubscription(bytes _subscriptionHash) public returns (bool success);
 ```
 
+###### executeSubscription
+```SOLIDITY
+
+/** @dev executes the provided subscription
+  * @param bytes _subscriptionHash is the identifier of the customer's subscription with its relevant details.
+  * @return success is the result of the subscription execution
+*/
+function executeSubscription(bytes _subscriptionHash) public returns (bool success);
+```
+
 ### Conclusion
 Subscriptions can and should encompass more than just token transfers, it should include all types of recurring transactions of ETH, tokens, payable smart contract methods)
