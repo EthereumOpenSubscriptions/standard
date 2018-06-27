@@ -171,16 +171,6 @@ function getSubscriptionExpire(bytes _subscriptionHash) view public returns (uin
 function getSubscriptionStatus(bytes _subscriptionHash) view public returns (uint status);
 
 ```
-
-###### getSubscriptionFee
-```SOLIDITY
-/** @dev Gets the subscription fee.
-  * @param _subscription is the identifier of the customer's subscription with its relevant details.
-  * @return fee is the subscription fee.
-*/
-function getSubscriptionFee(bytes32 _subscriptionHash) public view returns (uint fee);
-```
-
 #### Public Functions
 
 
