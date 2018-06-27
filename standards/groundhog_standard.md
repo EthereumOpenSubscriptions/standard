@@ -55,7 +55,6 @@ function isValidSubscription(bytes _subscriptionHash) view public returns (bool 
  uint nextAvailable,
  uint externalId,
  uint status,
- uint fee,
  bytes[] meta
   )
 */
@@ -209,7 +208,7 @@ function createSubscription(
   * @param bytes _subscriptionHash is the identifier of the customer's subscription with its relevant details.
   * @return success is the result of the subscription being cancelled
 */
-function cancelSubscription(bytes _subscriptionHash) public onlyAuthorized returns (bool success);
+function cancelSubscription(bytes _subscriptionHash) public returns (bool success);
 ```
 
 ###### pauseSubscription
@@ -219,7 +218,7 @@ function cancelSubscription(bytes _subscriptionHash) public onlyAuthorized retur
   * @param bytes _subscriptionHash is the identifier of the customer's subscription with its relevant details.
   * @return success is the result of the subscription being paused
 */
-function pauseSubscription(bytes _subscriptionHash) public onlyAuthorized returns (bool success);
+function pauseSubscription(bytes _subscriptionHash) public returns (bool success);
 ```
 
 ### Conclusion
