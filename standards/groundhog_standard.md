@@ -43,24 +43,37 @@ function isValidSubscription(bytes _subscriptionHash) view public returns (bool 
 /** @dev handles the incoming data to define subscription rules
   * @param bytes _subscriptionHash is the identifier of the customer's subscription with its relevant details.
   * @return (
-    address destination
+ address destination,
+ address recipient,
+ uint value,
+ bytes data,
+ uint created,
+ uint expires,
+ uint cycle,
+ uint interval,
+ uint lastCompleted,
+ uint nextAvailable,
+ uint externalId,
+ uint status,
+ uint fee,
+ bytes[] meta
   )
 */
 function getSubscription(bytes _subscriptionHash) view public returns (
-address destination,
-address recipient,
-uint value,
-bytes data,
-uint created,
-uint expires,
-uint cycle,
-uint interval,
-uint lastCompleted,
-uint nextAvailable,
-uint externalId,
-uint status,
-uint fee,
-bytes[] meta
+ address destination,
+ address recipient,
+ uint value,
+ bytes data,
+ uint created,
+ uint expires,
+ uint cycle,
+ uint interval,
+ uint lastCompleted,
+ uint nextAvailable,
+ uint externalId,
+ uint status,
+ uint fee,
+ bytes[] meta
 );
 ```
 
@@ -187,14 +200,15 @@ function getSubscriptionFee(bytes32 _subscriptionHash) public view returns (uint
 */
 
 function createSubscription(
-address _destination,
-address _recipient,
-uint _value,
-bytes _data,
-uint _expires,
-uint _interval,
-uint _externalId,
-bytes[] _meta);
+ address _destination,
+ address _recipient,
+ uint _value,
+ bytes _data,
+ uint _expires,
+ uint _interval,
+ uint _externalId,
+ bytes[] _meta
+ );
 ```
 
 
