@@ -11,6 +11,8 @@ See also: https://github.com/ethereum/EIPs/issues/948
 * Rober Jorden
 * John Griffin
 * David Kobrosky
+* Piotr Kosiński - ChronoLogic (Ethereum Alarm Clock)
+* Nathan Creswell
 * TODO- please add your name here
 
 # Design Goals 
