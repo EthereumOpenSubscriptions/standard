@@ -1,9 +1,10 @@
 ---
 eip: <to be assigned>
 title: Subscriptions
-author: 
+author:
 
 * Kevin Owocki <kevin@gitcoin.co> (@owocki)
+* John Griffin <john@atchai.com> (@johngriffin)
 * TODO - Others pls add your info here.
 
 discussions-to: [this github issue url](https://github.com/EthereumOpenSubscriptions/standard/issues) or [Gitcoin Slack](https://gitcoin.co/slack) in #proj-subscriptions channel
@@ -31,7 +32,7 @@ For a dapp founder:
 * since you know your subscriber numbers, churn numbers, conversion rate, you get consistent cash flow
 * you get to focus on making your customers happy (as opposed to having two actors: speculators & users)
 
-For these reasons, we think it's creating a standard way to do 'subscriptions' on Ethereum. 
+For these reasons, we think it's creating a standard way to do 'subscriptions' on Ethereum.
 
 
 ## Abstract
@@ -47,8 +48,45 @@ We also believe that creating momentum for Saas models in the Ethereum space is 
 
 ## Specification
 
-TODO
+### Public Methods
 
+#### isValidSubscription
+Used to check whether a given subscription ID represents a valid subscription.
+
+* @param  \_subscriptionId The subscription ID to check
+* @return a boolean to indicate whether the subscription exists and is valid
+
+```
+function isValidSubscription(bytes32 _subscriptionId)
+  public
+  view
+  returns (bool success);
+```
+
+#### cancelSubscription
+
+Called by subscriber, or by merchant in order to cancel an active subscription
+
+* @param  \_subscriptionId The subscription ID to delete
+* @return a boolean to indicate whether the subscription was successfully cancelled
+
+```
+function cancelSubscription(bytes32 _subscriptionId)
+  public
+  returns (bool success);
+```
+
+### Events
+
+#### CancelSubscription
+
+MUST trigger on any successful call to `cancelSubscription`
+
+```
+event CancelSubscription(
+    bytes32 _subscriptionId,
+    );
+```
 
 ## Rationale
 
