@@ -13,6 +13,7 @@ See also: https://github.com/ethereum/EIPs/issues/948
 * David Kobrosky
 * Piotr Kosiński - ChronoLogic (Ethereum Alarm Clock)
 * Nathan Creswell
+* Ankit Raj
 * TODO- please add your name here
 
 # Design Goals
