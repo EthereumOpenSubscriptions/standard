@@ -83,7 +83,7 @@ By *metadata* we define a self-described data not required by on-chain contract 
   * @return available funds
 */
 
-function metdata()
+function metadata()
     public
     returns (bytes metadata);
 ```
@@ -118,7 +118,7 @@ Which can be JSON serialized as
 ```
 
 Things to consider:
-* limit for amout of keys and values 
+* limit for amount of keys and values 
 
 ### Conclusion
 This is our suggestions for the beginning of a standardization on interaction with subscription data on the Ethereum blockchain. We are open to suggestions, concerns, or rejections. Let's collaborate and build a better ecosystem.
