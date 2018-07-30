@@ -43,7 +43,7 @@ function cancel()
 
 #### isFunded
 
-Checkes if there is enough funds available for provider to collect
+Checkes if there is enough funds available for the provider to collect
  
 ```SOLIDITY
 
@@ -106,7 +106,7 @@ The `execute` method would call `token.transfer(provider, (now - last_payment_at
 
 ### Metadata example
 
-Basic information about the subscription like:
+Basic information about the subscription:
 * name = "Monthly subscription"
 * description = "Any other extra description to be visible from wallet"
 * key = "value"
@@ -118,7 +118,7 @@ Which can be JSON serialized as
 ```
 
 Things to consider:
-* limit for amount of keys and values 
+* limit the amount of keys and values 
 
 ### Conclusion
 This is our suggestions for the beginning of a standardization on interaction with subscription data on the Ethereum blockchain. We are open to suggestions, concerns, or rejections. Let's collaborate and build a better ecosystem.
