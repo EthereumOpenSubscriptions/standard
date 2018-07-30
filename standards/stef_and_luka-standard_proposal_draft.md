@@ -28,7 +28,7 @@ The standard should also adhere to ERC165 for increased adoption.
 
 ### Interface
 
-```javascript
+```solidity
 
 interface ERC948 /* is ERC165 */ {
 
@@ -148,7 +148,7 @@ The extended standard offers subscription providers a way to register a third pa
 Subscription provider might not want to be the one executing payments since is does not want to deal with interacting with the subscription contract, following events, handling overdue payments and might want to delegate this responsibility to a third party.
 
 ## Interface
-```javascript
+```solidity
 
 interface ERC948Processor is ERC948 {
 
