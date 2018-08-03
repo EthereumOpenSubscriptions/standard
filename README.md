@@ -7,6 +7,7 @@ See also: https://github.com/ethereum/EIPs/issues/948
 
 * Scott Burke and Andrew Redden from BlockcrushR
 * Kevin Owocki - Gitcoin
+* Kevin Seagraves - Gitcoin
 * Travis Mathis / Kerman Kohli - 8x Protocol
 * Rober Jorden
 * John Griffin
