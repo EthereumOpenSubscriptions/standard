@@ -72,20 +72,20 @@ function availableFunds()
     returns (uint256 funds);
 ```
 
-#### metadata
+#### metadataURI
 
-Returns the off-chain location for metadata. 
+Returns URI (RFC 3986) for subscription metadata
 By *metadata* we define a self-described data not required by on-chain contract logic and thus possible to be kept off-chain. An example provided [here](#metadata-example)
 
 ```SOLIDITY
 
-/** @dev Serialized bytes of subscription data
-  * @return available funds
+/** @dev URI string to subscription metadata
+  * @return URI to metadata
 */
 
-function metadata()
+function metadataURI()
     public
-    returns (bytes metadata);
+    returns (string metadataURI);
 ```
 
 
